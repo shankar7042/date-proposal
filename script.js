@@ -15,7 +15,7 @@ const telegramBtn = document.getElementById("telegramBtn");
    Put your phone number here (with country code, digits only,
    e.g. "919876543210") so the message opens directly in YOUR chat.
    Leave it as "" to pick the chat manually in WhatsApp. */
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "917042778720";
 
 const screens = {
   question: document.getElementById("screen-question"),
