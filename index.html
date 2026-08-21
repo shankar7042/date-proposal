@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Go Out With Me? 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- floating hearts + plushies background -->
+  <div class="hearts-bg" id="heartsBg" aria-hidden="true"></div>
+  <div class="plushie p1" aria-hidden="true">🧸</div>
+  <div class="plushie p2" aria-hidden="true">🐰</div>
+  <div class="plushie p3" aria-hidden="true">🐼</div>
+  <div class="plushie p4" aria-hidden="true">🦄</div>
+
+  <main class="card" id="card">
+    <!-- SCREEN 1 : THE QUESTION -->
+    <section class="screen active" id="screen-question">
+      <div class="emoji-bounce">💌</div>
+      <h1 class="script-title">Hey you!</h1>
+      <p class="question">Will you go on a date with me?</p>
+      <p class="sub-note">(choose wisely... the other button is shy 🙈)</p>
+      <div class="btn-row" id="btnRow">
+        <button class="btn btn-yes" id="yesBtn">Yes! 💕</button>
+        <button class="btn btn-no" id="noBtn">No 😢</button>
+      </div>
+      <p class="tease-msg" id="teaseMsg"></p>
+    </section>
+
+    <!-- SCREEN 2 : PLAN THE DATE -->
+    <section class="screen" id="screen-plan">
+      <div class="emoji-bounce">🌸</div>
+      <h1 class="script-title">Yayyy!! 🎉</h1>
+      <p class="question">You just made me the happiest!</p>
+      <p class="sub-note">Now let's plan our perfect date 🥰</p>
+      <form class="plan-form" id="planForm">
+        <label class="field">
+          <span class="field-label">📅 Pick a date</span>
+          <input type="date" id="dateInput" required />
+        </label>
+        <label class="field">
+          <span class="field-label">📍 Where should we go?</span>
+          <input type="text" id="placeInput" placeholder="e.g. That cute café downtown ☕" required />
+        </label>
+        <button type="submit" class="btn btn-yes btn-submit">Confirm our date! 💘</button>
+      </form>
+    </section>
+
+    <!-- SCREEN 3 : CONFIRMATION -->
+    <section class="screen" id="screen-confirm">
+      <div class="emoji-bounce">🥳</div>
+      <h1 class="script-title">It's a Date!</h1>
+      <div class="confirm-box">
+        <p class="confirm-line">Our date is officially confirmed!! 💖</p>
+        <p class="confirm-detail">🗓️ <span id="confirmDate"></span></p>
+        <p class="confirm-detail">📍 <span id="confirmPlace"></span></p>
+        <p class="confirm-note">I can't wait to see you! It's going to be paw-fect 🐾✨</p>
+      </div>
+      <div class="share-row">
+        <button class="btn btn-wa" id="whatsappBtn">WhatsApp 💬</button>
+        <button class="btn btn-tg" id="telegramBtn">Telegram ✈️</button>
+      </div>
+      <button class="btn btn-yes" id="restartBtn">Plan again 🔁</button>
+    </section>
+  </main>
+
+  <footer class="footer">made with 💗 just for you</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
